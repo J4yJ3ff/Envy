@@ -8,6 +8,7 @@ const page = () => {
       <Hero />;
       <Service />
       <Testimonials />
+      {/* Portfolio */}
     </>
   );
 };
