@@ -68,8 +68,8 @@ const Navbar = () => {
           <SheetTrigger asChild>
             <HamburgerMenuIcon width={30} height={30} className="sm:hidden" />
           </SheetTrigger>
-          <SheetContent side="right" className="border-none text-secondary-100">
-            <div className="pb-16">
+          <SheetContent side="top" className="border-none text-secondary-100">
+            <SheetClose asChild className="pb-16">
               <Link href="/" className="flex items-center gap-4">
                 <Image
                   src="/Vector.png"
@@ -82,7 +82,7 @@ const Navbar = () => {
                   Boltz<span className="text-primary-200">shift</span>
                 </p>
               </Link>
-            </div>
+            </SheetClose>
 
             <SheetClose asChild>
               <NavContent />

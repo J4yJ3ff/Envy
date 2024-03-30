@@ -9,6 +9,8 @@ const page = () => {
       <Service />
       <Testimonials />
       {/* Portfolio */}
+      {/* Blog */}
+      {/* Benefits */}
     </>
   );
 };
