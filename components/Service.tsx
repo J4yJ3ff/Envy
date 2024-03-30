@@ -30,7 +30,7 @@ const Service = () => {
         {cardInfo.map((info) => (
           <div
             key={info.id}
-            className="relative overflow-hidden rounded-lg border border-primary-200 p-2"
+            className="relative overflow-hidden rounded-lg p-2 shadow shadow-primary-100"
           >
             <Card
               icon={info.icon}

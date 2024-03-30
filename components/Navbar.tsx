@@ -15,7 +15,29 @@ import { usePathname } from "next/navigation";
 import { Button } from "./primitives/Button";
 
 const Navbar = () => {
-  const pathname = usePathname();
+  /* ---------------------------------------------- */
+  const NavContent = () => {
+    const pathname = usePathname();
+
+    return navLinks
+      .filter((link) => link.name !== "Home")
+      .map((link) => {
+        const isActive = pathname === link.href;
+        return (
+          <Link
+            key={link.id}
+            href={link.href}
+            className={`${
+              isActive ? "bg-primary-400 text-secondary-950" : ""
+            } mb-8 flex w-full flex-col items-center rounded-2xl py-2 text-2xl text-secondary-300 hover:text-primary-200`}
+          >
+            {link.name}
+          </Link>
+        );
+      });
+  };
+
+  /* ---------------------------------------------- */
 
   return (
     <nav className="text- flex items-center justify-between px-6 py-[35px] text-secondary-100">
@@ -46,39 +68,24 @@ const Navbar = () => {
           <SheetTrigger asChild>
             <HamburgerMenuIcon width={30} height={30} className="sm:hidden" />
           </SheetTrigger>
-          <SheetContent side="right" className="text-secondary-100">
-            <SheetClose className="w-full">
-              <div className="pb-16">
-                <Link href="/" className="flex items-center gap-4">
-                  <Image
-                    src="/Vector.png"
-                    alt="Boltzshift"
-                    height={60}
-                    width={60}
-                  />
+          <SheetContent side="right" className="border-none text-secondary-100">
+            <div className="pb-16">
+              <Link href="/" className="flex items-center gap-4">
+                <Image
+                  src="/Vector.png"
+                  alt="Boltzshift"
+                  height={60}
+                  width={60}
+                />
 
-                  <p className="font-spaceGrotesk text-2xl">
-                    Boltz<span className="text-primary-200">shift</span>
-                  </p>
-                </Link>
-              </div>
+                <p className="font-spaceGrotesk text-2xl">
+                  Boltz<span className="text-primary-200">shift</span>
+                </p>
+              </Link>
+            </div>
 
-              {navLinks
-                .filter((link) => link.name !== "Home")
-                .map((link) => {
-                  const isActive = pathname === link.href;
-                  return (
-                    <Link
-                      key={link.id}
-                      href={link.href}
-                      className={`${
-                        isActive ? "bg-primary-400 text-secondary-950" : ""
-                      } mb-8 flex w-full flex-col items-center rounded-2xl py-2 text-2xl text-secondary-300 hover:text-primary-200`}
-                    >
-                      {link.name}
-                    </Link>
-                  );
-                })}
+            <SheetClose asChild>
+              <NavContent />
             </SheetClose>
           </SheetContent>
         </Sheet>
