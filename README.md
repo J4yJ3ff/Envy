@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Geekbits.dev Agency
+
+This is the [Geekbits.dev](https://geekbits.io/) agency project.
 
 ## Getting Started
 
-First, run the development server:
+Run the dev server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- React Next JS
+- Shadcn
+- Tailwind CSS
+- TypeScript
 
-## Learn More
+## Goals
 
-To learn more about Next.js, take a look at the following resources:
+Below are the tasks to accomplish.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Create an About page
+- Create a portfolio section to showcase our works on the home page
+- Create the blog page and section for the featured post on the home page.
+- Create the Contact Us page
+- Create the docs page.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**More tasks/features coming**...
+
+## Folder Structure
+
+### 1. app folder
+
+This will contain all the routes for the site. New pages/routes get a folder inside the app directory. eg: `app/about/page.tsx`
+
+### 2. components
+
+This is where all the reusable code is found.
+
+Currently, this folder has the `Services`, `Navbar`, `Testimonials`, `hero` and `footer` components. These are used to create the layout of the homepage.
+
+> **Primitives**:
+>
+> Contains code that use a combination of smaller components like buttons. An example of a primitive is a card. A card has an image, description and a button. So it uses the smaller button component.
+>
+> **ui**:
+>
+> This is where shadcn components like buttons and badges are stored. If you install a shadcn component, this is where you can access it from.
+
+### 3. Constants
+
+This folder has an `index.ts` file that contains the hard coded data such as the nav links. The reason for this is to avoid code repetition so we just loop over the data.
+
+### 4. lib
+
+This is used by tailwind
+
+### 5. Public
+
+This folder contains Images that are used all over the site.
+
+## Colors
+
+Under tailwind config colors, we have the Primary and Secondary colors. The primary colors is for the brand and accent colors. The secondary color is mostly for colors, it's a shade of gray color palette.
 
 ## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
