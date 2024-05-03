@@ -1,3 +1,4 @@
+import Companies from "@/components/Companies";
 import Hero from "@/components/Hero";
 import Service from "@/components/Service";
 import Companies from "@/components/Companies";
