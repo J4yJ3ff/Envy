@@ -1,4 +1,5 @@
 import Companies from "@/components/Companies";
+import HowItWorks from "@/components/HowItWorks";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Service from "@/components/Service";
@@ -15,6 +16,7 @@ const page = () => {
       {/* Portfolio */}
       {/* Blog */}
       {/* Benefits */}
+      <HowItWorks/>;
     </>
   );
 };
