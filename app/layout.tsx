@@ -3,11 +3,8 @@ import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import React from "react";
-<<<<<<< HEAD
-=======
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
->>>>>>> d30d82b5fe125d21f8bb475b6767f79b472ea119
 
 const inter = Inter({ subsets: ["latin"] });
 
