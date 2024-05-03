@@ -47,7 +47,56 @@ export const cardInfo = [
       "We craft seemless and enjoyable user experiences. Our UX ensure that every interaction is intuitive and engaging",
   },
 ];
+export const companyLogos = [
+  {
+    id: "1",
+    asset: "/assets/Customer.io.svg",
+    alt: "Customer.io",
+    target: "https://customer.io/"
+  },
+  {
+    id: "2",
+    asset: "/assets/Treehouse.svg",
+    alt: "Treehouse",
+    target: "https://teamtreehouse.com/"
 
+  },
+  {
+    id: "3",
+    asset: "/assets/Databricks.svg",
+    alt: "Databricks",
+    target: "https://www.databricks.com/"
+  },
+  {
+    id: "4",
+    asset: "/assets/Ghost.svg",
+    alt: "Ghost.io"
+  },
+  {
+    id: "5",
+    asset: "/assets/Postman.svg",
+    alt: "Postman",
+    target: "https://www.postman.com/"
+  },
+  {
+    id: "6",
+    asset: "/assets/Loom.svg",
+    alt: "Quotient",
+    target: "https://loom.com"
+  },
+  {
+    id: "7",
+    asset: "/assets/Lattice.svg",
+    alt: "Lattice",
+    target: "https://lattice.com"
+  },
+  {
+    id: "8",
+    asset: "/assets/Docker.svg",
+    alt: "Docker",
+    target: "https://docker.com"
+  }
+]
 export const testimonialCardInfo = [
   {
     id: "1",
