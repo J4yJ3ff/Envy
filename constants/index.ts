@@ -1,3 +1,8 @@
+import ProjectOne from "@/public/assets/ProjectOne.png";
+import ProjectTwo from "@/public/assets/ProjectTwo.png";
+import ProjectThree from "@/public/assets/ProjectThree.png";
+import ProjectFour from "@/public/assets/ProjectFour.png";
+
 export const navLinks = [
   {
     id: 2,
@@ -52,51 +57,50 @@ export const companyLogos = [
     id: "1",
     asset: "/assets/Customer.io.svg",
     alt: "Customer.io",
-    target: "https://customer.io/"
+    target: "https://customer.io/",
   },
   {
     id: "2",
     asset: "/assets/Treehouse.svg",
     alt: "Treehouse",
-    target: "https://teamtreehouse.com/"
-
+    target: "https://teamtreehouse.com/",
   },
   {
     id: "3",
     asset: "/assets/Databricks.svg",
     alt: "Databricks",
-    target: "https://www.databricks.com/"
+    target: "https://www.databricks.com/",
   },
   {
     id: "4",
     asset: "/assets/Ghost.svg",
-    alt: "Ghost.io"
+    alt: "Ghost.io",
   },
   {
     id: "5",
     asset: "/assets/Postman.svg",
     alt: "Postman",
-    target: "https://www.postman.com/"
+    target: "https://www.postman.com/",
   },
   {
     id: "6",
     asset: "/assets/Loom.svg",
     alt: "Quotient",
-    target: "https://loom.com"
+    target: "https://loom.com",
   },
   {
     id: "7",
     asset: "/assets/Lattice.svg",
     alt: "Lattice",
-    target: "https://lattice.com"
+    target: "https://lattice.com",
   },
   {
     id: "8",
     asset: "/assets/Docker.svg",
     alt: "Docker",
-    target: "https://docker.com"
-  }
-]
+    target: "https://docker.com",
+  },
+];
 export const testimonialCardInfo = [
   {
     id: "1",
@@ -141,5 +145,43 @@ export const testimonialCardInfo = [
       avatar: "/assets/Avatar 3.png",
       position: "WordPress Developer",
     },
+  },
+];
+
+export const projectsData = [
+  {
+    title: "Geekbits",
+    description:
+      "Geekbits is a tech blog providing best tips, trick on how to better use your technology",
+    tags: ["Ghost", "Tailwind"],
+    imageUrl: ProjectOne,
+  },
+  {
+    title: "DevFlow",
+    description:
+      "This is a stack overflow clone where developers can find help when they are stuck",
+    tags: [
+      "Typescript",
+      "Tailwind",
+      "MongoDB",
+      "NextJS",
+      "Clerk Auth",
+      "Shadcn",
+    ],
+    imageUrl: ProjectTwo,
+  },
+  {
+    title: "Thought Be Things",
+    description:
+      "This is a ticket buying app from TBT welcoming people to the next Cultural Show",
+    tags: ["React", "Tailwind", "NextJS", "Daraja API", "Shadcn"],
+    imageUrl: ProjectThree,
+  },
+  {
+    title: "BoltzShift",
+    description:
+      "This is a web development agancy offering High quality design services using the best tech stack available",
+    tags: ["NextJS", "Tailwind", "Shadcn"],
+    imageUrl: ProjectFour,
   },
 ];
